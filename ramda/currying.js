@@ -34,11 +34,12 @@ const
         const
         selected = filter(publishedInYear4(year), books),
         //can be re-written in 
-        selected2 = filter(book => publishedInYear4(year), books),
-        selected3 = filter(book => publishedInYear4(year, book), books)
+        selected2 = filter(book => publishedInYear4(year, book), books),
+        //same as
+        selected3 = filter(book => publishedInYear4(year)(book), books)
 
 
-        return map(book => book.title, selected)
+        return map(book => book.title, selected3)
     },
     result = operateWithMultiArgumentFunc(books, 2000)
     result1 = operateWithPartial(books, 2002),
