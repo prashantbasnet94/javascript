@@ -1,4 +1,7 @@
 /*
+
+https://randycoulman.com/blog/2016/05/31/thinking-in-ramda-combining-functions/
+
 Once you’ve gotten used to the idea of passing functions to other functions, 
 you might start to find situations where you want to combine several functions together.
 
