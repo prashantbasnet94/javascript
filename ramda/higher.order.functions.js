@@ -29,6 +29,8 @@ publishedInYear3 = year => book => book.year === year,
 operate2 = (books, year) => {
     const
     selected2 =  filter(publishedInYear3(year), books)
+    //  const selected = filter(partialRight(publishedInYear, [year]), books)
+
     return map(book => book.title, selected2)
 }
 console.log(operate2(books, 2012))
